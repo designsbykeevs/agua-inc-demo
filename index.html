@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Co - Client Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Acme Co</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="dashboard">
+            <h2>Welcome to Your Project Dashboard</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Active Projects</h3>
+                    <p class="stat-number">12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>In Development</h3>
+                    <p class="stat-number">5</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed This Month</h3>
+                    <p class="stat-number">8</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Current Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>User Authentication System</h3>
+                    <p>Status: In Development</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Client Dashboard Analytics</h3>
+                    <p>Status: Code Review</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
