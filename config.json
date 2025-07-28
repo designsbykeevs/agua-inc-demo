@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "Acme Co Client Portal",
+    "version": "2.1.0",
+    "environment": "development",
+    "port": 3000
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "acme_client_portal",
+    "ssl": false
+  },
+  "auth": {
+    "jwt_secret": "your-secret-key-here",
+    "token_expiry": "24h",
+    "refresh_token_expiry": "7d"
+  },
+  "api": {
+    "base_url": "https://api.acme-co.com",
+    "timeout": 30000,
+    "rate_limit": {
+      "requests_per_minute": 100,
+      "burst_limit": 20
+    }
+  },
+  "features": {
+    "user_authentication": true,
+    "dashboard_analytics": true,
+    "real_time_updates": true,
+    "client_reporting": true,
+    "multi_tenant": true
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "webhook_url": "https://api.acme-co.com/webhooks/github"
+    },
+    "clickup": {
+      "enabled": true,
+      "api_key": "clickup_api_key_here"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/app.log",
+    "max_size": "10mb"
+  }
+}
